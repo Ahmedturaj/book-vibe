@@ -1,0 +1,104 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg/800px-The_Great_Gatsby_Cover_1925_Retouched.jpg",
+        "review": "A timeless tale of love, ambition, and the pursuit of the American Dream.",
+        "totalPages": 180,
+        "rating": 4.5,
+        "category": "Classic Fiction",
+        "tags": [
+            "Romance",
+            "Drama",
+            "American Literature"
+        ],
+        "publisher": "Scribner",
+        "yearOfPublishing": 1925
+    },
+    {
+        "bookId": 2,
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "image": "https://cdn.britannica.com/21/182021-050-666DB6B1/book-cover-To-Kill-a-Mockingbird-many-1961.jpg",
+        "review": "A powerful story of racial injustice and moral growth in a small Southern town.",
+        "totalPages": 281,
+        "rating": 4.8,
+        "category": "Classic Fiction",
+        "tags": [
+            "Social Justice",
+            "Coming-of-Age",
+            "Southern Gothic"
+        ],
+        "publisher": "J. B. Lippincott & Co.",
+        "yearOfPublishing": 1960
+    },
+    {
+        "bookId": 3,
+        "bookName": "1984",
+        "author": "George Orwell",
+        "image": "https://m.media-amazon.com/images/I/61NAx5pd6XL._AC_UF1000,1000_QL80_.jpg",
+        "review": "A dystopian masterpiece exploring themes of totalitarianism, surveillance, and resistance.",
+        "totalPages": 328,
+        "rating": 4.6,
+        "category": "Dystopian Fiction",
+        "tags": [
+            "Political Satire",
+            "Totalitarianism",
+            "Surveillance State"
+        ],
+        "publisher": "Secker & Warburg",
+        "yearOfPublishing": 1949
+    },
+    {
+        "bookId": 4,
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "image": "https://m.media-amazon.com/images/I/71Q1tPupKjL._AC_UF1000,1000_QL80_.jpg",
+        "review": "A sparkling comedy of manners that explores love, class, and societal expectations.",
+        "totalPages": 279,
+        "rating": 4.7,
+        "category": "Classic Fiction",
+        "tags": [
+            "Romantic",
+            "Regency Era",
+            "British Literature"
+        ],
+        "publisher": "T. Egerton, Whitehall",
+        "yearOfPublishing": 1813
+    },
+    {
+        "bookId": 5,
+        "bookName": "Harry Potter and the Sorcerer's Stone",
+        "author": "J.K. Rowling",
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1598823299i/42844155.jpg",
+        "review": "A captivating tale of a young wizard's journey into a world of magic and adventure.",
+        "totalPages": 320,
+        "rating": 4.9,
+        "category": "Fantasy",
+        "tags": [
+            "Magic",
+            "Coming-of-Age",
+            "Wizarding World"
+        ],
+        "publisher": "Bloomsbury",
+        "yearOfPublishing": 1997
+    },
+    {
+        "bookId": 6,
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "image": "https://cdn.britannica.com/94/181394-050-2F76F7EE/Reproduction-cover-edition-The-Catcher-in-the.jpg",
+        "review": "A poignant portrayal of teenage angst and alienation in post-war America.",
+        "totalPages": 224,
+        "rating": 4.4,
+        "category": "Classic Fiction",
+        "tags": [
+            "Coming-of-Age",
+            "Existentialism",
+            "Literature"
+        ],
+        "publisher": "Little, Brown and Company",
+        "yearOfPublishing": 1951
+    }
+]
