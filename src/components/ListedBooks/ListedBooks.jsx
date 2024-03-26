@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
-import ReadBooks from "../ReadBooks/ReadBooks";
-import WishListBooks from "../WishListBooks/WishListBooks";
+import { useState, useEffect } from 'react';
+import ReadBooks from '../ReadBooks/ReadBooks';
+import WishListBooks from '../WishListBooks/WishListBooks';
 
 const ListedBooks = () => {
-    const [selectedTab, setSelectedTab] = useState("read");
+    const [selectedTab, setSelectedTab] = useState('read');
     const [readBooks, setReadBooks] = useState([]);
     const [wishlistBooks, setWishlistBooks] = useState([]);
 
@@ -12,11 +12,9 @@ const ListedBooks = () => {
         const wishlistBooks = [];
         for (let i = 0; i < localStorage.length; i++) {
             const key = localStorage.key(i);
-            console.log(key);
-            if (key.includes("_read")) {
+            if (key.includes('_read')) {
                 readBooks.push(JSON.parse(localStorage.getItem(key)));
-            }
-            else if (key.includes("_wishlist")) {
+            } else if (key.includes('_wishlist')) {
                 wishlistBooks.push(JSON.parse(localStorage.getItem(key)));
             }
         }
@@ -24,21 +22,20 @@ const ListedBooks = () => {
         setWishlistBooks(wishlistBooks);
     }, []);
 
-
     const handleTabChange = (tab) => {
         setSelectedTab(tab);
     };
 
     const handleSort = (sortBy) => {
-        if (sortBy === "rating") {
+        if (sortBy === 'rating') {
             setReadBooks([...readBooks.sort((a, b) => b.rating - a.rating)]);
             setWishlistBooks([...wishlistBooks.sort((a, b) => b.rating - a.rating)]);
-        } else if (sortBy === "totalPages") {
-            setReadBooks([...readBooks.sort((a, b) => a.totalPages - b.totalPages)]);
-            setWishlistBooks([...wishlistBooks.sort((a, b) => a.totalPages - b.totalPages)]);
-        } else if (sortBy === "yearOfPublishing") {
-            setReadBooks([...readBooks.sort((a, b) => a.yearOfPublishing - b.yearOfPublishing)]);
-            setWishlistBooks([...wishlistBooks.sort((a, b) => a.yearOfPublishing - b.yearOfPublishing)]);
+        } else if (sortBy === 'totalPages') {
+            setReadBooks([...readBooks.sort((a, b) => b.totalPages - a.totalPages)]);
+            setWishlistBooks([...wishlistBooks.sort((a, b) => b.totalPages - a.totalPages)]);
+        } else if (sortBy === 'yearOfPublishing') {
+            setReadBooks([...readBooks.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing)]);
+            setWishlistBooks([...wishlistBooks.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing)]);
         }
     };
 
@@ -55,29 +52,36 @@ const ListedBooks = () => {
                 </select>
             </div>
             <div className="flex justify-start  mb-4">
-                <button className={`px-1 text-xl ${selectedTab === "read" ? "font-bold border-t-2 border-r-2 border-l-2 border-black" : "border-black border-b-2"}`} onClick={() => handleTabChange("read")}>Read</button>
-                <button className={`w-full flex items-start justify-start pl-2 text-xl ${selectedTab === "wishlist" ? "font-bold border-t-2 border-l-2 border-black" : "border border-t-0 border-r-0 border-black border-b-2 w-full"}`} onClick={() => handleTabChange("wishlist")}>Wishlist</button>
+                <button className={`px-1 text-xl ${selectedTab === 'read' ? 'font-bold border-t-2 border-r-2 border-l-2 border-black' : 'border-black border-b-2'}`} onClick={() => handleTabChange('read')}>
+                    Read
+                </button>
+                <button className={`w-full flex items-start justify-start pl-2 text-xl ${selectedTab === 'wishlist' ? 'font-bold border-t-2 border-l-2 border-black' : 'border border-t-0 border-r-0 border-black border-b-2 w-full'}`} onClick={() => handleTabChange('wishlist')}>
+                    Wishlist
+                </button>
             </div>
             <div>
-                {selectedTab === "read" && (
+                {selectedTab === 'read' && (
                     <div>
                         <h2 className="text-xl font-semibold mb-2">Read Books</h2>
                         <ul>
-                            {readBooks.map(book => <ReadBooks key={book.bookId} book={book}></ReadBooks>)}
+                            {readBooks.map((book) => (
+                                <ReadBooks key={book.bookId} book={book} />
+                            ))}
                         </ul>
                     </div>
                 )}
-                {selectedTab === "wishlist" && (
+                {selectedTab === 'wishlist' && (
                     <div>
                         <h2 className="text-xl font-semibold mb-2">Wishlist Books</h2>
                         <ul>
-                            {wishlistBooks.map(book => <WishListBooks key={book.bookId} book={book}></WishListBooks>)}
+                            {wishlistBooks.map((book) => (
+                                <WishListBooks key={book.bookId} book={book} />
+                            ))}
                         </ul>
                     </div>
                 )}
             </div>
         </div>
-       
     );
 };
 
