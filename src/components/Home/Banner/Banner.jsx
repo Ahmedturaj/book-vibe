@@ -9,7 +9,7 @@ const Banner = () => {
                 <div>
                     <h1 className="text-3xl font-bold mb-10">Open a world of wonder with just a click – 
                     <br />where every page holds a new adventure. Welcome to your online book haven.</h1>
-                    <button style={{transition:'all 0.8s'}} className="btn bg-[#23BE0A] rounded-2xl hover:bg-[#59C6D2] hover:scale-105"><Link to={'/listedBooks'} className="font-semibold text-white text-xl   ">View The List</Link></button>
+                    <Link to={'/listedBooks'} className="font-semibold text-white text-xl   "><button style={{transition:'all 0.8s'}} className="btn bg-[#23BE0A] rounded-2xl hover:bg-[#59C6D2] hover:scale-105">View The List</button></Link>
                 </div>
             </div>
         </div>
