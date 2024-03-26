@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { CiLogin } from "react-icons/ci";
-
+import bookLogo from '../../assets/bible-3417_512.gif'
 const Navbar = () => {
 
     return (
@@ -17,7 +17,9 @@ const Navbar = () => {
                             <li><NavLink to={'/pagesRead'} className={({ isActive }) => isActive ? 'text-[#23BE0A] border border-[#23BE0A] font-bold p-2 rounded-md text-xl' : 'text-black text-xl'}>Pages To Read</NavLink></li>
                         </ul>
                     </div>
-                    <Link to={'/'} className="btn btn-ghost  text-3xl font-bold">Book Vibe</Link>
+                    <Link to={'/'} className="btn btn-ghost  text-3xl font-bold"> 
+                    <img src={bookLogo} alt="" className="w-14 rounded-full"/>
+                    Book Vibe</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
