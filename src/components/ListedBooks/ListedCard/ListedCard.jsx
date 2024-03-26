@@ -12,7 +12,7 @@ const ListedCard = ({ book }) => {
                 <div className="card-body">
                     <h2 className="card-title text-3xl">{bookName}</h2>
                     <p className='text-xl'>By: {author}</p>
-                    <div className="flex items-start justify-start gap-5">
+                    <div className="flex flex-col md:flex-row items-start justify-start gap-5">
                     <div className="flex gap-5">
                                 <span className="font-bold text-xl">Tag</span> {
                                     tags.map((tag, ind) => <p style={{ transition: 'all .6s' }} className='text-xs rounded-3xl border px-2 border-[#23BE0A] text-[#23BE0A] cursor-pointer hover:bg-[#23BE0A] hover:text-white hover:text-sm hover:scale-105 flex items-center justify-center' key={ind}>#{tag}</p>)
