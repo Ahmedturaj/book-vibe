@@ -15,9 +15,9 @@ const BookDetails = () => {
         if (!addedToRead) {
             setAddedToRead(true);
             localStorage.setItem(`book_${id}_read`, JSON.stringify(book));
-            toast("Success!", "Book added to Read list.", "success");
+            toast("Success! Book added to Read list.", "success");
         } else {
-            toast("Oops!", "This book is already in your Read list.", "warning");
+            toast("Oops! This book is already in your Read list.", "warning");
         }
     };
 
@@ -25,11 +25,11 @@ const BookDetails = () => {
         if (!addedToWishlist && !addedToRead) {
             setAddedToWishlist(true);
             localStorage.setItem(`book_${id}_wishlist`, JSON.stringify(book));
-            toast("Success!", "Book added to Wishlist.", "success");
+            toast("Success! Book added to Wishlist.", "success");
         } else if (addedToRead) {
-            toast("Oops!", "You have already added this book to Read list.", "warning");
+            toast("Oops! You have already added this book to Read list.", "warning");
         } else {
-            toast("Oops!", "This book is already in your Wishlist.", "warning");
+            toast("Oops! This book is already in your Wishlist.", "warning");
         }
     };
     return (
