@@ -10,7 +10,13 @@ The **Book vibe** is a single page web site __Home, Listed Books, Pages To Read,
 
 ## Listed Book
 - When the read button or wishList button clicked from the Book details page those books information will shown this page.
+- There is a button that will control the sorting .
+- and cards which took from [DaisyUI](https://daisyui.com/)
 
+## Pages To Read
+- It has  a Custom Shape Bar Chart which took from [reChart](https://recharts.org/en-US/examples/CustomShapeBarChart)
+- The chart is based on  read-list book's name against read-listed
+books totalPages.
 ### For Styling it's use these site :
 
 - [Tailwind.CSS](https://tailwindcss.com/)
@@ -19,6 +25,7 @@ The **Book vibe** is a single page web site __Home, Listed Books, Pages To Read,
 - [google_work_sans_font](https://fonts.google.com/specimen/Work+Sans)
 - [gif](https://pixabay.com/gifs/)
 - [imagebb](https://imgbb.com/)
+- [reChart](https://recharts.org/en-US/examples/CustomShapeBarChart)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
