@@ -8,28 +8,31 @@ const BookDetails = () => {
     const { id } = useParams()
     const book = books.find(book => book.bookId === parseInt(id));
     const { bookName, tags, category, author, image, rating, review, totalPages, publisher, yearOfPublishing } = book;
-    const [addedToRead, setAddedToRead] = useState(false);
-    const [addedToWishlist, setAddedToWishlist] = useState(false);
+    const isBookAddedToRead = localStorage.getItem(`book_${id}_read`);
+    const isBookAddedToWishList = localStorage.getItem(`book_${id}_wishlist`);
+    const [addedToRead, setAddedToRead] = useState(isBookAddedToRead);
+    const [addedToWishlist, setAddedToWishlist] = useState(isBookAddedToWishList);
 
     const handleRead = () => {
-        if (!addedToRead) {
-            setAddedToRead(true);
+     if (!addedToRead) {
             localStorage.setItem(`book_${id}_read`, JSON.stringify(book));
-            toast("Success! Book added to Read list.", "success");
+            toast.success("Success! Book added to Read list.");
+            setAddedToRead(true);
         } else {
-            toast("Oops! This book is already in your Read list.", "warning");
+            toast.warning("Oops! This book is already in your Read list.");
         }
     };
+    
 
     const handleWishList = () => {
-        if (!addedToWishlist && !addedToRead) {
+        if (!addedToRead && !addedToWishlist) {
             setAddedToWishlist(true);
             localStorage.setItem(`book_${id}_wishlist`, JSON.stringify(book));
-            toast("Success! Book added to Wishlist.", "success");
+            toast.success("Success! Book added to Wishlist.", "success");
         } else if (addedToRead) {
-            toast("Oops! You have already added this book to Read list.", "warning");
+            toast.warning("Oops! You have already added this book to Read list.", "warning");
         } else {
-            toast("Oops! This book is already in your Wishlist.", "warning");
+            toast.warning("Oops! This book is already in your Wishlist.", "warning");
         }
     };
     return (

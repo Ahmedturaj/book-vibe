@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { CiLogin } from "react-icons/ci";
-import bookLogo from '../../assets/bible-3417_512.gif'
+import bookLogo from '../../assets/banner.png.gif'
 const Navbar = () => {
 
     return (
