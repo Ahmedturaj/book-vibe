@@ -19,10 +19,12 @@ const Book = ({ book }) => {
                     <h2 style={{ transition: 'all .5s' }} className="card-title text-base md:text-lg hover:text-gray-400">{bookName}</h2>
                     <p className="text-xs md:text-sm">By: {author}</p>
                     <hr className='my-3 md:my-5' />
-                    <div className="card-actions w-full">
+                    <div className="card-end w-full">
                         <div className='flex justify-between items-center'>
+                            <div className="">
                             <p className='text-xs md:text-sm'>{category}</p>
-                            <p className='flex gap-1 items-center text-xs md:text-sm'><CiStar />{rating}</p>
+                            </div>
+                            <div><p className='flex gap-1 items-center text-xs md:text-sm'><CiStar />{rating}</p></div>
                         </div>
                     </div>
                 </div>
