@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "The Great Gatsby",
+        "picture": "https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg",
+        "mainPoint": "The main point of 'The Great Gatsby' revolves around the American Dream and the disillusionment that follows when it proves unattainable for the characters.",
+        "reader": "John"
+    },
+    {
+        "id": 2,
+        "name": "To Kill a Mockingbird",
+        "picture": "https://img.freepik.com/free-photo/happy-bearded-man-business-clothes-looking-camera_171337-11392.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1711411200&semt=ais",
+        "mainPoint": "The main point of 'To Kill a Mockingbird' is the exploration of racial injustice and the moral growth of its young protagonist, Scout Finch, as she witnesses the trial of an innocent black man accused of raping a white woman.",
+        "reader": "Sophia"
+    },
+    {
+        "id": 3,
+        "name": "1984",
+        "picture": "https://img.freepik.com/premium-photo/business-people-portrait-concept-smiling-businessman-face-portrait_380164-119773.jpg",
+        "mainPoint": "The main point of '1984' is the warning against the dangers of totalitarianism and the importance of individual freedom and resistance against oppressive regimes.",
+        "reader": "Liam"
+    },
+    {
+        "id": 4,
+        "name": "Pride and Prejudice",
+        "picture": "https://media.istockphoto.com/id/940475680/photo/close-up-portrait-of-cheerful-brunet-young-man-in-jeans-shirt-crossing-hands-and-look-at.jpg?s=612x612&w=0&k=20&c=FFduZf0U7qxwIfkrzAPHXgxK2LoZf86i74rFtex6cLw=",
+        "mainPoint": "The main point of 'Pride and Prejudice' is the exploration of societal norms and expectations, particularly regarding marriage and social status, and the importance of overcoming prejudice and misconceptions in matters of the heart.",
+        "reader": "Ava"
+    }
+]

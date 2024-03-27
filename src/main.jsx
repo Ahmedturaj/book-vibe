@@ -12,6 +12,7 @@ import PagesRead from './components/PagesRead/PagesRead.jsx';
 import BookDetails from './components/BookDetails/BookDetails.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 import Authors from './components/Authors/Authors.jsx';
+import ReadersReview from './components/ReadersReview/ReadersReview.jsx';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,11 @@ const router = createBrowserRouter([
       {
         path:'/authors',
         element:<Authors></Authors>
+      },
+      {
+        path:'/review',
+        element:<ReadersReview></ReadersReview>,
+        loader:()=>fetch('../review.json')
       }
     ]
   },

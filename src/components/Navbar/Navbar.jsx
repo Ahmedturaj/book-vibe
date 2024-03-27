@@ -15,6 +15,8 @@ const Navbar = () => {
                             <li><NavLink to={'/'} className={({ isActive }) => isActive ? 'text-[#23BE0A] border border-[#23BE0A] font-bold text-xl p-2 rounded-md' : 'text-black text-xl'}>Home</NavLink></li>
                             <li> <NavLink to={'/listedBooks'} className={({ isActive }) => isActive ? 'text-[#23BE0A] border border-[#23BE0A] font-bold  p-2 rounded-md text-xl' : 'text-black text-xl'}>Listed Books</NavLink></li>
                             <li><NavLink to={'/pagesRead'} className={({ isActive }) => isActive ? 'text-[#23BE0A] border border-[#23BE0A] font-bold p-2 rounded-md text-xl' : 'text-black text-xl'}>Pages To Read</NavLink></li>
+                            <li><NavLink to={'/authors'} className={({ isActive }) => isActive ? 'text-[#23BE0A] border border-[#23BE0A] font-bold p-2 rounded-md text-xl' : 'text-black text-xl'}>About Authors</NavLink></li>
+                        <li><NavLink to={'/review'} className={({ isActive }) => isActive ? 'text-[#23BE0A] border border-[#23BE0A] font-bold p-2 rounded-md text-xl' : 'text-black text-xl'}>Reviews</NavLink></li>
                         </ul>
                     </div>
                     <Link to={'/'} className="btn btn-ghost  text-3xl font-bold"> 
@@ -27,6 +29,7 @@ const Navbar = () => {
                         <li> <NavLink to={'/listedBooks'} className={({ isActive }) => isActive ? 'text-[#23BE0A] border border-[#23BE0A] font-bold  p-2 rounded-md text-xl' : 'text-black text-xl'}>Listed Books</NavLink></li>
                         <li><NavLink to={'/pagesRead'} className={({ isActive }) => isActive ? 'text-[#23BE0A] border border-[#23BE0A] font-bold p-2 rounded-md text-xl' : 'text-black text-xl'}>Pages To Read</NavLink></li>
                         <li><NavLink to={'/authors'} className={({ isActive }) => isActive ? 'text-[#23BE0A] border border-[#23BE0A] font-bold p-2 rounded-md text-xl' : 'text-black text-xl'}>About Authors</NavLink></li>
+                        <li><NavLink to={'/review'} className={({ isActive }) => isActive ? 'text-[#23BE0A] border border-[#23BE0A] font-bold p-2 rounded-md text-xl' : 'text-black text-xl'}>Reviews</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">

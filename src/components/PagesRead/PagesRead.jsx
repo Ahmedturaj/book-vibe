@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Bar, BarChart, CartesianGrid, Cell, XAxis, YAxis } from 'recharts';
 
 const CustomShapeBarChart = ({ data }) => {
@@ -15,10 +15,14 @@ const CustomShapeBarChart = ({ data }) => {
         return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
     };
 
+    // Dynamically calculate the width and height based on the viewport size
+    const width = window.innerWidth < 500 ? window.innerWidth - 20 : 1000;
+    const height = window.innerWidth < 500 ? 290 : 390;
+
     return (
         <BarChart
-            width={1000}
-            height={390}
+            width={width}
+            height={height}
             data={data}
             margin={{
                 top: 20,
@@ -52,16 +56,15 @@ const PagesRead = () => {
         }
         setReadBooks(readBooksData);
     }, []);
+
     const chartData = readBooks.map(book => ({
         name: book.bookName,
         totalPages: book.totalPages
     }));
 
     return (
-        <div className=' w-full'>
-            
-            <div className="mx-auto bg-slate-200 bg-opacity-30 p-5
-            md:p-8 container">
+        <div className='w-full'>
+            <div className="mx-auto bg-slate-200 bg-opacity-30 md:p-8 container">
                 <CustomShapeBarChart data={chartData} />
             </div>
         </div>
