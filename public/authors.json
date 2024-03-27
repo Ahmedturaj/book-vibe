@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "name": "F. Scott Fitzgerald",
+      "image": "https://sevenov.com/wp-content/uploads/2023/02/f-scott-fitzgerald-20230212.jpg",
+      "birthDate": "September 24, 1896",
+      "deathDate": "December 21, 1940",
+      "lifeInfo": "F. Scott Fitzgerald was an American novelist, widely regarded as one of the greatest writers of the 20th century. He is best known for his novel 'The Great Gatsby' (1925)."
+    },
+    {
+      "id": 2,
+      "name": "Harper Lee",
+      "image": "https://cdn.britannica.com/04/193204-050-4B1C2FE7/Harper-Lee-American.jpg",
+      "birthDate": "April 28, 1926",
+      "deathDate": "February 19, 2016",
+      "lifeInfo": "Harper Lee was an American novelist best known for her novel 'To Kill a Mockingbird' (1960), which deals with the issues of racism and injustice in the American South."
+    },
+    {
+      "id": 3,
+      "name": "George Orwell",
+      "image": "https://i0.wp.com/literariness.org/wp-content/uploads/2019/05/197d462dc80434cf046557946d636309.jpg?resize=700%2C1043&ssl=1",
+      "birthDate": "June 25, 1903",
+      "deathDate": "January 21, 1950",
+      "lifeInfo": "George Orwell, whose real name was Eric Arthur Blair, was an English novelist, essayist, journalist, and critic. He is best known for his dystopian novel '1984' (1949) and allegorical novella 'Animal Farm' (1945)."
+    },
+    {
+      "id": 4,
+      "name": "Jane Austen",
+      "image": "https://cdn.britannica.com/12/172012-050-DAA7CE6B/Jane-Austen-Cassandra-engraving-portrait-1810.jpg",
+      "birthDate": "December 16, 1775",
+      "deathDate": "July 18, 1817",
+      "lifeInfo": "Jane Austen was an English novelist known primarily for her six major novels, which interpret, critique, and comment upon the British landed gentry at the end of the 18th century. Her works include 'Pride and Prejudice' (1813) and 'Sense and Sensibility' (1811)."
+    },
+    {
+      "id": 5,
+      "name": "J.K. Rowling",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/J._K._Rowling_2010.jpg",
+      "birthDate": "July 31, 1965",
+      "deathDate": null,
+      "lifeInfo": "J.K. Rowling is a British author, philanthropist, film producer, television producer, and screenwriter. She is best known for writing the 'Harry Potter' fantasy series, which has won multiple awards and sold more than 500 million copies, becoming the best-selling book series in history."
+    },
+    {
+      "id": 6,
+      "name": "J.D. Salinger",
+      "image": "https://ca-times.brightspotcdn.com/dims4/default/09f9941/2147483647/strip/true/crop/300x410+0+0/resize/1200x1640!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F7c%2F03%2F59d4bdeb4e319c6e4c89b1b8a6ce%2Fla-ca-0422-j-d-salinger-023.jpg-20110501",
+      "birthDate": "January 1, 1919",
+      "deathDate": "January 27, 2010",
+      "lifeInfo": "J.D. Salinger was an American writer best known for his novel 'The Catcher in the Rye' (1951), a controversial depiction of adolescence and alienation in American society. He led a reclusive lifestyle after the success of his novel and published very few works afterward."
+    }
+  ]
+  
