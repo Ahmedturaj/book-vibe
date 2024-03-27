@@ -13,7 +13,7 @@ const Book = ({ book }) => {
                 <div className="card-body px-5 md:px-10">
                     <div className="flex flex-wrap gap-2 md:gap-5">
                         {tags.map((tag, ind) => (
-                            <p style={{ transition: 'all .8s' }} className='text-xs md:text-sm rounded-3xl border px-2 border-[#23BE0A] text-[#23BE0A] cursor-pointer hover:bg-[#23BE0A] hover:text-white hover:text-sm hover:scale-105' key={ind}>{tag}</p>
+                            <p style={{ transition: 'all .8s' }} className='text-xs md:text-sm rounded-3xl border px-2 border-[#23BE0A] text-[#23BE0A] cursor-pointer hover:bg-[#23BE0A] hover:text-white hover:text-sm hover:scale-105' key={ind}>#{tag}</p>
                         ))}
                     </div>
                     <h2 style={{ transition: 'all .5s' }} className="card-title text-base md:text-lg hover:text-gray-400">{bookName}</h2>
