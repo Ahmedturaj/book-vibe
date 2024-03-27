@@ -6,7 +6,7 @@ const ListedBooks = () => {
     const [selectedTab, setSelectedTab] = useState('read');
     const [readBooks, setReadBooks] = useState([]);
     const [wishlistBooks, setWishlistBooks] = useState([]);
-
+    const [sortBy, setSortBy] = useState('rating');
     useEffect(() => {
         const readBooks = [];
         const wishlistBooks = [];
@@ -22,11 +22,8 @@ const ListedBooks = () => {
         setWishlistBooks(wishlistBooks);
     }, []);
 
-    const handleTabChange = (tab) => {
-        setSelectedTab(tab);
-    };
-
     const handleSort = (sortBy) => {
+        setSortBy(sortBy);
         if (sortBy === 'rating') {
             setReadBooks([...readBooks.sort((a, b) => b.rating - a.rating)]);
             setWishlistBooks([...wishlistBooks.sort((a, b) => b.rating - a.rating)]);
@@ -39,17 +36,25 @@ const ListedBooks = () => {
         }
     };
 
+    const handleTabChange = (tab) => {
+        setSelectedTab(tab);
+    };
+
     return (
         <div>
             <div className="border bg-[#1313130D] my-14 p-7 rounded-2xl">
                 <h2 className="text-center font-bold text-3xl">Books</h2>
             </div>
-            <div className="flex justify-center mb-4">
-                <select onChange={(e) => handleSort(e.target.value)} className="p-2 border border-gray-300 rounded-md bg-[#23BE0A] text-white">
-                    <option value="rating">Rating</option>
-                    <option value="totalPages">Number of Pages</option>
-                    <option value="yearOfPublishing">Published Year</option>
-                </select>
+            <div className="flex items-center justify-center">
+                <details className="dropdown mt-8
+            mb-28 text-center">
+                    <summary className="m-1 btn bg-[#23BE0A] hover:bg-[#23BE0A]">Sort By</summary>
+                    <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                        <li><button onClick={() => handleSort('rating')}>Rating</button></li>
+                        <li><button onClick={() => handleSort('totalPages')}>Number of Pages</button></li>
+                        <li><button onClick={() => handleSort('yearOfPublishing')}>Published Year</button></li>
+                    </ul>
+                </details>
             </div>
             <div className="flex justify-start  mb-4">
                 <button className={`px-1 text-xl ${selectedTab === 'read' ? 'font-bold border-t-2 border-r-2 border-l-2 border-black' : 'border-black border-b-2'}`} onClick={() => handleTabChange('read')}>
